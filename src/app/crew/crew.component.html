@@ -18,4 +18,4 @@
 
 <input #name type="text" />
 <label>First mission<input #firstMission type="checkbox" /></label>
-<button (click)="add(name.value, firstMission.checked)">Add</button>
+<button (click)="add(name.value, firstMission.checked); name.value=''; firstMission.value=off">Add</button>
